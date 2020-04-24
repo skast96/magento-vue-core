@@ -1,55 +1,84 @@
 {
-    "name": "@copex/global",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "serve": "node_modules/.bin/vue-cli-service serve",
-        "build": "node_modules/.bin/vue-cli-service build --watch --hot",
-        "lint": "node_modules/.bin/vue-cli-service lint",
-        "web": "webpack --watch"
+  "name": "@copex/global",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "node_modules/.bin/vue-cli-service serve",
+    "build": "node_modules/.bin/vue-cli-service build --watch --hot",
+    "lint": "node_modules/.bin/vue-cli-service lint",
+    "web": "webpack --watch"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.11.0",
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6",
+    "vuelidate": "^0.7.4",
+    "vuex": "^3.0.0",
+    "webpack": "^4.42.1"
+  },
+  "devDependencies": {
+    "@o3o/vue-cli-plugin-packages": "~0.3.2",
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^3.3.11",
+    "glob": "~7.1.1",
+    "grunt": "~1.0.1",
+    "grunt-autoprefixer": "~3.0.4",
+    "grunt-banner": "~0.6.0",
+    "grunt-continue": "~0.1.0",
+    "grunt-contrib-clean": "~1.1.0",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-cssmin": "~2.2.1",
+    "grunt-contrib-imagemin": "~2.0.1",
+    "grunt-contrib-jasmine": "~1.1.0",
+    "grunt-contrib-less": "~1.4.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-eslint": "~20.1.0",
+    "grunt-exec": "~3.0.0",
+    "grunt-jscs": "~3.0.1",
+    "grunt-replace": "~1.0.1",
+    "grunt-styledocco": "~0.3.0",
+    "grunt-template-jasmine-requirejs": "~0.2.3",
+    "grunt-text-replace": "~0.4.0",
+    "imagemin-svgo": "~5.2.1",
+    "load-grunt-config": "~0.19.2",
+    "morgan": "~1.9.0",
+    "node-minify": "~2.3.1",
+    "path": "~0.12.7",
+    "serve-static": "~1.13.1",
+    "squirejs": "~0.2.1",
+    "strip-json-comments": "~2.0.1",
+    "time-grunt": "~1.4.0",
+    "underscore": "~1.8.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
     },
-    "dependencies": {
-        "bootstrap": "^4.4.1",
-        "bootstrap-vue": "^2.11.0",
-        "core-js": "^3.6.4",
-        "vue": "^2.6.11",
-        "vue-router": "^3.1.6",
-        "vuelidate": "^0.7.4",
-        "vuex": "^3.0.0",
-        "webpack": "^4.42.1"
-    },
-    "devDependencies": {
-        "@o3o/vue-cli-plugin-packages": "~0.3.2",
-        "@vue/cli-plugin-babel": "~4.3.0",
-        "@vue/cli-plugin-eslint": "~4.3.0",
-        "@vue/cli-service": "~4.3.0",
-        "babel-eslint": "^10.1.0",
-        "eslint": "^6.7.2",
-        "eslint-plugin-vue": "^6.2.2",
-        "vue-template-compiler": "^2.6.11",
-        "webpack-cli": "^3.3.11"
-    },
-    "eslintConfig": {
-        "root": true,
-        "env": {
-            "node": true
-        },
-        "extends": [
-            "plugin:vue/essential",
-            "eslint:recommended"
-        ],
-        "parserOptions": {
-            "parser": "babel-eslint"
-        },
-        "rules": {}
-    },
-    "browserslist": [
-        "> 1%",
-        "last 2 versions",
-        "not dead"
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
     ],
-    "workspaces": [
-        "app/code/CopeX/*",
-        "vue-core"
-    ]
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "workspaces": [
+    "app/code/CopeX/*",
+    "vue-core"
+  ]
 }
