@@ -1,0 +1,55 @@
+{
+    "name": "@copex/global",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "node_modules/.bin/vue-cli-service serve",
+        "build": "node_modules/.bin/vue-cli-service build --watch --hot",
+        "lint": "node_modules/.bin/vue-cli-service lint",
+        "web": "webpack --watch"
+    },
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "bootstrap-vue": "^2.11.0",
+        "core-js": "^3.6.4",
+        "vue": "^2.6.11",
+        "vue-router": "^3.1.6",
+        "vuelidate": "^0.7.4",
+        "vuex": "^3.0.0",
+        "webpack": "^4.42.1"
+    },
+    "devDependencies": {
+        "@o3o/vue-cli-plugin-packages": "~0.3.2",
+        "@vue/cli-plugin-babel": "~4.3.0",
+        "@vue/cli-plugin-eslint": "~4.3.0",
+        "@vue/cli-service": "~4.3.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "vue-template-compiler": "^2.6.11",
+        "webpack-cli": "^3.3.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {}
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ],
+    "workspaces": [
+        "app/code/CopeX/*",
+        "vue-core"
+    ]
+}
